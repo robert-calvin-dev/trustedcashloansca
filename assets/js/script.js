@@ -1,7 +1,7 @@
 function insertHeader() {
  const headerHTML = `
    <div class="header2">
-    <a style="margin: auto;" href="https://trustedcashloans.com"><img style="padding: 20px; " src="/assets/images/header-logo-tagline.png" alt="Trusted Cash Loans Logo and Tagline" class="logo-tagline2"></a>
+    <a style="margin: auto;" href="https://trustedcashloans.ca"><img style="padding: 20px; " src="/assets/images/header-logo-tagline.png" alt="Trusted Cash Loans Logo and Tagline" class="logo-tagline2"></a>
   </div>
  `;
  document.addEventListener('DOMContentLoaded', function() {
