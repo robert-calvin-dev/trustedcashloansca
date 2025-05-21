@@ -302,7 +302,7 @@
   const emailInput = document.getElementById('email');
   const phoneInput = document.getElementById('phone');
   const amountInput = document.getElementById('amount');
-  const stateInput = document.getElementById('state');
+  const provinceInput = document.getElementById('province');
   const loanTypeInput = document.getElementById('loanType');
 
   // Load from localStorage
@@ -311,14 +311,14 @@
   const email = localStorage.getItem('loan_email') || '';
   const phone = localStorage.getItem('loan_phone') || '';
   const amount = localStorage.getItem('loan_amount') || '';
-  const state = localStorage.getItem('loan_state') || '';
+  const province = localStorage.getItem('loan_province') || '';
   const loanType = localStorage.getItem('loan_type') || '';
 
   fullNameInput.value = `${firstName} ${lastName}`;
   emailInput.value = email;
   phoneInput.value = phone;
   amountInput.value = `$${amount}`;
-  stateInput.value = state;
+  provinceInput.value = province;
   loanTypeInput.value = loanType;
 
 
@@ -390,7 +390,7 @@
       }
 
       // Postal Code
-      if (field.name === 'address_postal' && field.value && !field.value.match(/^\d{5}(-\d{4})?$/)) {
+      if (field.name === 'address_postal' && field.value && !field.value.match(/^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$/)) {
         isValid = false;
         field.style.borderColor = 'red';
         if (!firstInvalid) firstInvalid = field;
@@ -418,7 +418,7 @@
     formData.append('phone', phone);
     formData.append('loan_amount', amount);
     formData.append('loan_purpose', localStorage.getItem('loan_purpose') || '');
-    formData.append('state', state);
+    formData.append('province', province);
     formData.append('loan_type', loanType);
 
     this.querySelectorAll('input, select, textarea').forEach(input => {

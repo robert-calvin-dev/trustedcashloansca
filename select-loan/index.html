@@ -125,6 +125,21 @@
   <script src="/assets/js/script.js"></script>
 
   <script>
+     const paydayProvince = {
+      "Alberta": { cost: "$14", per: "$100" },
+      "British Columbia": { cost: "$14", per: "$100" },      
+      "Manitoba": { cost: "$14", per: "$100" },
+      "New Brunswick": { cost: "$14", per: "$100" },
+      "Prince Edward Island": { cost: "$14", per: "$100" },
+      "Ontario": { cost: "$14", per: "$100" },
+      "Quebec": { cost: "$14", per: "$100" },
+      "Nova Scotia": { cost: "$14", per: "$100" },
+      "Newfoundland and Labrador": { cost: "$14", per: "$100" },
+      "Saskatchewan": { cost: "$14", per: "$100" },
+      "Northwest Territories": { cost: "$14", per: "$100" },
+      "Nunavut": { cost: "$14", per: "$100" },
+      "Yukon": { cost: "$14", per: "$100" }
+    };
     const provinceSelect = document.getElementById('province');
     const loanTypeSelect = document.getElementById('loanType');
     const paydayInfo = document.getElementById('paydayInfo');
@@ -140,8 +155,8 @@
     if (paydayStates[selectedProvince]) {
       const info = paydayStates[selectedProvince];
       paydayInfo.innerHTML = `
-        <strong>Payday Loan Info:</strong><br>
-        In Canada it costs $14 per $100 borrowed on payday loans
+         <strong>${selectedProvince} Payday Loan Info:</strong><br>
+        The cost of borrowing is ${info.cost} per ${info.per} on payday loans
       `;
       paydayInfo.classList.remove('hidden');
       checkWrap.classList.remove('hidden');
