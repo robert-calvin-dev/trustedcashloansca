@@ -135,7 +135,7 @@
        </label>
      
        <label>Postal Code
-         <input type="text" name="address_postal" pattern="^\d{5}(-\d{4})?$" placeholder="e.g., V5B2L6" required>
+         <input type="text" name="address_postal" pattern="/^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$/" placeholder="e.g., V5B2L6" required>
        </label>
        <label>
         <input name="lived_there_less_than_12_months" type="checkbox" id="lessThan12Months">
@@ -167,7 +167,7 @@
         </label>
       
         <label>Postal Code
-          <input type="text" name="prev_address_postal" pattern="^\d{5}(-\d{4})?$" placeholder="e.g., V5B2L6" required>
+          <input type="text" name="prev_address_postal" pattern="/^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$/" placeholder="e.g., V5B2L6" required>
         </label>
       </fieldset>
       </div>
