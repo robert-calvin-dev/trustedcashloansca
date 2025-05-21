@@ -11,34 +11,34 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8">
 
-<link rel="icon" type="image/png" sizes="32x32" href="https://trustedcashloans.com/assets/images/siteicon.png">
-<link rel="icon" type="image/png" sizes="16x16" href="https://trustedcashloans.com/assets/images/siteicon.png">
-<link rel="apple-touch-icon" sizes="180x180" href="https://trustedcashloans.com/assets/images/siteicon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://trustedcashloans.ca/assets/images/siteicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://trustedcashloans.ca/assets/images/siteicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://trustedcashloans.ca/assets/images/siteicon.png">
 <meta name="theme-color" content="#132c4b">
 
 <!-- Open Graph / Facebook -->
 <meta property="og:title" content="Apply for a Loan – Trusted Cash Loans">
 <meta property="og:description" content="Complete your loan application online in minutes. Payday loans, personal loans, and emergency cash – all in one place.">
-<meta property="og:url" content="https://trustedcashloans.com/apply/">
+<meta property="og:url" content="https://trustedcashloans.ca/apply/">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://trustedcashloans.com/assets/images/metalogoedition.png">
+<meta property="og:image" content="https://trustedcashloans.ca/assets/images/metalogoedition.png">
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Apply for a Loan – Trusted Cash Loans">
 <meta name="twitter:description" content="Get started now. Apply online for payday or personal loans with fast decisions and zero fluff.">
-<meta name="twitter:image" content="https://trustedcashloans.com/assets/images/metalogoedition.png">
+<meta name="twitter:image" content="https://trustedcashloans.ca/assets/images/metalogoedition.png">
 
-<link rel="sitemap" type="application/xml" title="Sitemap" href="https://trustedcashloans.com/sitemap.xml" />
+<link rel="sitemap" type="application/xml" title="Sitemap" href="https://trustedcashloans.ca/sitemap.xml" />
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
   "name": "Apply – Trusted Cash Loans",
-  "url": "https://trustedcashloans.com/apply/",
+  "url": "https://trustedcashloans.ca/apply/",
   "description": "Apply online for payday and personal loans in minutes. Trusted Cash Loans helps you access funds quickly and securely when you need them most.",
-  "image": "https://trustedcashloans.com/assets/images/metalogoedition.png",
+  "image": "https://trustedcashloans.ca/assets/images/metalogoedition.png",
   "author": {
     "@type": "Person",
     "name": "Robert Calvin"
@@ -48,7 +48,7 @@
     "name": "Trusted Cash Loans",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://trustedcashloans.com/assets/images/siteicon.png"
+      "url": "https://trustedcashloans.ca/assets/images/siteicon.png"
     }
   }
 }
@@ -64,7 +64,7 @@
 </head>
 <body>
  <div id="header"></div>
- <div style="background-color: lightsteelblue; padding: 50px;">
+ <div style="background-color: #fff2d6; padding: 50px;">
 
   <div class="form-wrap">
     <h2>Loan Application</h2>
@@ -85,8 +85,8 @@
       <label>Loan Amount Requested
         <input type="text" id="amount" readonly>
       </label>
-      <label>State
-        <input type="text" id="state" readonly>
+      <label>Province
+        <input type="text" id="province" readonly>
       </label>
       <label>Loan Type
         <input type="text" id="loanType" readonly>
@@ -134,8 +134,8 @@
          <input type="text" name="address_city" required>
        </label>
      
-       <label>ZIP Code
-         <input type="text" name="address_zip" pattern="^\d{5}(-\d{4})?$" placeholder="e.g., 90210" required>
+       <label>Postal Code
+         <input type="text" name="address_postal" pattern="^\d{5}(-\d{4})?$" placeholder="e.g., V5B2L6" required>
        </label>
        <label>
         <input name="lived_there_less_than_12_months" type="checkbox" id="lessThan12Months">
@@ -166,8 +166,8 @@
           <input type="text" name="prev_address_city" required>
         </label>
       
-        <label>ZIP Code
-          <input type="text" name="prev_address_zip" pattern="^\d{5}(-\d{4})?$" placeholder="e.g., 90210" required>
+        <label>Postal Code
+          <input type="text" name="prev_address_postal" pattern="^\d{5}(-\d{4})?$" placeholder="e.g., V5B2L6" required>
         </label>
       </fieldset>
       </div>
@@ -193,7 +193,7 @@
           <option>Self-Employed</option>
           <option>Retired</option>
           <option>Unemployed</option>
-          <option>Social Assistance</option>
+          <option>Income Assistance</option>
           <option>Disability</option>
         </select>
       </label>
@@ -244,11 +244,11 @@
       </fieldset>
 
       <fieldset style="margin-top:20px;">
-       <legend><strong>SSN</strong></legend>
+       <legend><strong>SIN</strong></legend>
 
-      <div id="ssnBlock">
-        <label>SSN (Optional for Payday Loans) <input name="SSN" type="text"></label>
-        <label>Confirm SSN <input name="SSN_confirmation" type="text"></label>
+      <div id="SINBlock">
+        <label>SIN (Optional for Payday Loans) <input name="SIN" type="text"></label>
+        <label>Confirm SIN <input name="SIN_confirmation" type="text"></label>
       </div>
 
       </fieldset>
@@ -389,8 +389,8 @@
         if (!firstInvalid) firstInvalid = field;
       }
 
-      // ZIP Code
-      if (field.name === 'address_zip' && field.value && !field.value.match(/^\d{5}(-\d{4})?$/)) {
+      // Postal Code
+      if (field.name === 'address_postal' && field.value && !field.value.match(/^\d{5}(-\d{4})?$/)) {
         isValid = false;
         field.style.borderColor = 'red';
         if (!firstInvalid) firstInvalid = field;
@@ -428,7 +428,7 @@
     });
 
     try {
-      const res = await fetch('https://hooks.zapier.com/hooks/catch/23008356/2778bib/', {
+      const res = await fetch('', {
         method: 'POST',
         body: formData
       });

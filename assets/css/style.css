@@ -4,7 +4,7 @@ html {
   max-width: 1300px;
   justify-content: center;
   margin: auto;
-  background-color: aliceblue;
+  background-color: rgb(255, 240, 240);
 }
 
 body {
@@ -13,7 +13,7 @@ body {
   margin: auto;
   font-family: Arial, sans-serif;
   background: #f7faff;
-  color: #003366;
+  color: #b50000;
   width: 100%;
   font-size: 20px;
   border: 1px solid black;
@@ -34,7 +34,19 @@ h3 {
 
 h1 strong,
 h2 strong {
-  color: palegreen;
+  color: rgb(251, 255, 0);
+}
+
+a {
+  color:orangered;
+}
+
+a:hover {
+  color:rgb(68, 155, 177);
+}
+
+a:visited {
+  color:#fc0b0b;
 }
 
 header {
@@ -77,23 +89,23 @@ header {
 .container {
   display: flex;
   width: 100%;
-  border-top: 30px solid green;
-  border-bottom: 30px solid green;
+  border-top: 30px solid #6b0000;
+  border-bottom: 30px solid #6b0000;
   margin: auto;
 }
 
 .right {
-  background-color: green;
+  background-color: #6b0000;
   width: 50%;
 }
 
 .hero {
   width: 50%;
   text-align: left;
-  background: linear-gradient(to right, #004aad, #0094d4);
+  background: linear-gradient(to right, #424242, #6b0000);
   color: #fff;
   padding: 10px 20px 40px 20px;
-  border-right: 10px solid green;
+  border-right: 10px solid #6b0000;
 }
 
 .arrows-img {
@@ -113,7 +125,7 @@ header {
   margin: auto;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, .1);
-  border-top: 10px solid green;
+  border-top: 10px solid #6b0000;
 }
 
 form label {
@@ -131,8 +143,8 @@ select {
 }
 
 button {
-  background: #faf200;
-  color: rgb(0, 0, 0);
+  background: #006fb8;
+  color: rgb(255, 255, 255);
   border: none;
   padding: 15px;
   font-weight: bold;
@@ -143,7 +155,7 @@ button {
 }
 
 .container-two {
-  background-color: lightsteelblue;
+  background-color: #fff2d6;
   display: flex;
   flex-direction: column;
 }
@@ -183,7 +195,7 @@ button {
 }
 
 footer {
-  background: #003366;
+  background: #333333;
   color: white;
   padding: 30px 20px;
   text-align: center;
@@ -204,7 +216,7 @@ nav {
 }
 
 nav a {
-  color: white;
+  color: #fc0b0b;
   text-decoration: none;
 }
 
@@ -287,8 +299,8 @@ form {
     display: flex;
     flex-direction:column;
     width: 100%;
-    border-top: 30px solid green;
-    border-bottom: 30px solid green;
+    border-top: 30px solid #6b0000;
+    border-bottom: 30px solid #6b0000;
     margin: auto;
   }
   
@@ -296,17 +308,17 @@ form {
     display: flex;
     padding-top: 30px;
     flex-direction: column-reverse;
-    background-color: green;
+    background-color: #6b0000;
     width: 100%;
   }
   
   .hero {
     width: 90%;
     text-align: left;
-    background: linear-gradient(to right, #004aad, #0094d4);
+    background: linear-gradient(to right, #6b0000, #d40000);
     color: #fff;
     padding: 10px 20px 40px 20px;
-    border-right: 10px solid green;
+    border-right: 10px solid #6b0000;
   }
   
   .arrows-img {
@@ -331,7 +343,7 @@ form {
     margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, .1);
-    border-top: 10px solid green;
+    border-top: 10px solid #6b0000;
   }
   
   form label {
@@ -349,7 +361,7 @@ form {
   }
   
   button {
-    background: #faf200;
+    background: #4bfa00;
     color: rgb(0, 0, 0);
     border: none;
     padding: 15px;

@@ -7,4 +7,4 @@ Disallow: /legalstuff/
 
 Allow: /
 
-Sitemap: https://trustedcashloans.com/sitemap.xml
+Sitemap: https://trustedcashloans.ca/sitemap.xml
