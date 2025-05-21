@@ -19,7 +19,7 @@ function insertFooter() {
     <a href="/contact/">Contact Trusted Cash Loans</a>
   </nav>
   <nav>
-    <a href="/blog/">Blog</a>
+    <a href="https://trustedcashloans.com/blog/">Blog</a>
     <a href="/faq/">FAQ</a>
     <a href="/provincial-laws/">Provincial Laws</a>
     <a href="/legalstuff/">Legal Stuff</a>
