@@ -291,9 +291,7 @@ form {
     border: none;
   }
 
-  .flags {
-    display: none;
-  }
+
 
   .container {
     display: flex;
